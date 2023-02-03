@@ -3,7 +3,6 @@
 ## **Aim is to build a predictive model and predict the sales of each product at a particular outlet.**
 
 ### Data:
-https://www.kaggle.com/datasets/shivan118/big-mart-sales-prediction-datasets
 Sales data for 1559 products across 10 stores in different cities
 
 ### Methods:
