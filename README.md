@@ -98,7 +98,7 @@ R2: 0.5958
 
 - The Final Model chosen was a Decision Regression Tree Model with the max_depth tuned to 5. 
 - The Mean Absolute Error was off by about $738.10
-- The Mean Squared Error was #1,115,223.90
+- The Mean Squared Error was $1,115,223.90
 - The Root Mean Squared Error had a calculation of 1,056.0416
 
 We can use this model to predict sales for the various stores.  
