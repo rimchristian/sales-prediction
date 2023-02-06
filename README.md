@@ -43,3 +43,13 @@ Outlet_Size | The size of the store in terms of ground area covered
 Outlet_location_type | The type of area in which the storoe is located
 Outlet_Type | Whether the outlet is a grocery store or some sort of supermarket
 Item_Outlet_Sales | Sales of the product in the particular store. This is the target variable to be predicted. 
+
+
+### Before data modeling, the data was cleaned, and the following processes were performed:
+
+
+### Exploratory Data Analysis
+![image](https://user-images.githubusercontent.com/74616874/216893168-1b8e8740-da89-46a7-aa77-dbdf2b8ecb4e.png)
+
+
+
