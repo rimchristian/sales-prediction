@@ -76,8 +76,29 @@ Scatter Plot: Correlation Coefficient
 ![image](https://user-images.githubusercontent.com/74616874/216895650-8c19b281-39df-4cdf-8250-3041cd243e9b.png)
 
 ### Models Evaluated & Results
+       
+Linear Regression Test Scores:
+MAE: 803.6604 
+MSE: 1,192,130.7291 
+RMSE: 1,091.8474 
+R2: 0.5679
+
+Decision Tree Regressor Testing Model (Max_Depth = 9)
+MAE: 783.5367 
+MSE: 1,270,111.0932 
+RMSE: 1,126.9921 
+R2: 0.5396
+
+Tuned Decision Tree Regressor Testing Model (Max_Depth = 5)
+MAE: 738.0686 
+MSE: 1,115,223.9035 
+RMSE: 1,056.0416 
+R2: 0.5958
 
 
+- The Final Model chosen was a Decision Regression Tree Model with the max_depth tuned to 5. 
+- The Mean Absolute Error was off by about $738.10
+- The Mean Squared Error was #1,115,223.90
+- The Root Mean Squared Error had a calculation of 1,056.0416
 
-
-
+We can use this model to predict sales for the various stores.  
