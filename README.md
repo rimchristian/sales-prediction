@@ -22,3 +22,6 @@ Sales data for 1559 products across 10 stores in different cities
 - Model Comparison
 
 ### Results 
+- Create a default model
+- High Bias Version and High Variance Version 
+- Create best version of the model
