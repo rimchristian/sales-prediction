@@ -76,12 +76,20 @@ Scatter Plot: Correlation Coefficient
 ![image](https://user-images.githubusercontent.com/74616874/216895650-8c19b281-39df-4cdf-8250-3041cd243e9b.png)
 
 ### Models Evaluated & Results
+
+Linear Regression Test Predictions:
+test_pred = lin_reg_pipe.predict(X_test)
+test_pred[:10]
+
+Output:   
+array([1363.375,  714.   ,  883.25 , 4235.   , 3338.5  ,  610.5  ,
+       4769.5  , 2063.25 , 1403.   , 2816.75 ])
        
-Linear Regression Test Scores:
-MAE: 803.6604 
-MSE: 1,192,130.7291 
-RMSE: 1,091.8474 
-R2: 0.5679
+Linear Regression Train Scores
+MAE: 847.1742 
+MSE: 1,297,591.6937 
+RMSE: 1,139.1188 
+R2: 0.5615
 
 Decision Tree Regressor Testing Model (Max_Depth = 9)
 MAE: 783.5367 
@@ -89,16 +97,20 @@ MSE: 1,270,111.0932
 RMSE: 1,126.9921 
 R2: 0.5396
 
+Decision Tree Test Predictions:
+test_preds[:10]
+
+Output:
+array([ 805.618 , 1249.0408,  926.7936, 5000.8238, 4502.1396,  679.116 ,
+       5313.084 ,  282.2992, 1704.448 , 2846.295 ])
+
 Tuned Decision Tree Regressor Testing Model (Max_Depth = 5)
-MAE: 738.0686 
-MSE: 1,115,223.9035 
-RMSE: 1,056.0416 
-R2: 0.5958
+MAE: 738.0201 
+MSE: 1,117,511.9614 
+RMSE: 1,057.1244 
+R2: 0.5950
 
 
-- The Final Model chosen was a Decision Regression Tree Model with the max_depth tuned to 5. 
-- The Mean Absolute Error was off by about $738.10
-- The Mean Squared Error was $1,115,223.90
-- The Root Mean Squared Error had a calculation of 1,056.0416
+### **Recommendation**
 
-We can use this model to predict sales for the various stores.  
+The Decision Tree Model is the one I would use because of the higher R2 score. The R2 for the Decision Tree is 59% for the testing set and 60% for the training set. The RMSE was also lower for the Decision Tree with 1,057.1244.
