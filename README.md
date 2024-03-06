@@ -1,6 +1,8 @@
 # Sales Prediction Analysis
 
 ## Overview
+This project aims to predict sales using two different machine learning models: Linear Regression and Decision Tree. The analysis involves evaluating the performance of each model and comparing their predictive capabilities.
+
 
 ### Data:
 Data Science Big Market Sales Prediction: https://www.kaggle.com/datasets/shivan118/big-mart-sales-prediction-datasets
@@ -23,33 +25,7 @@ Outlet_location_type | The type of area in which the storoe is located
 Outlet_Type | Whether the outlet is a grocery store or some sort of supermarket
 Item_Outlet_Sales | Sales of the product in the particular store. This is the target variable to be predicted. 
 
-## Results Interpretation
-### Linear Regression Model:
-- **Training Scores:**
-  - \(R^2\): 0.5606
-  - MAE: 848.9872
-  - MSE: 1,300,271.1535
-  - RMSE: 1,140.2943
-
-- **Test Scores:**
-  - \(R^2\): 0.5658
-  - MAE: 808.0322
-  - MSE: 1,197,957.7117
-  - RMSE: 1,094.5125
-
-
-### Results 
-- Create a default model
-- High Bias Version and High Variance Version 
-- Create best version of the model
-
-
-
-
-### Before data modeling, the data was cleaned, and the following processes were performed:
-
-
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 - This histogram shows the frequency distribution of the Item Fat Content.  
 
 ![image](https://user-images.githubusercontent.com/74616874/216893168-1b8e8740-da89-46a7-aa77-dbdf2b8ecb4e.png)
@@ -77,8 +53,48 @@ Scatter Plot: Correlation Coefficient
 ![image](https://user-images.githubusercontent.com/74616874/216895650-8c19b281-39df-4cdf-8250-3041cd243e9b.png)
 
 
+## Results Interpretation
+### Linear Regression Model:
+- **Training Scores:**
+  - \(R^2\): 0.5606
+  - MAE: 848.9872
+  - MSE: 1,300,271.1535
+  - RMSE: 1,140.2943
+
+- **Test Scores:**
+  - \(R^2\): 0.5658
+  - MAE: 808.0322
+  - MSE: 1,197,957.7117
+  - RMSE: 1,094.5125
+    
+### Decision Tree Model:
+
+- **Training Scores:**
+  - \(R^2\): 0.6039
+  - MAE: 762.6551
+  - MSE: 1,172,151.6518
+  - RMSE: 1,082.6595
+
+- **Test Scores:**
+  - \(R^2\): 0.5947
+  - MAE: 738.6501
+  - MSE: 1,118,238.0927
+  - RMSE: 1,057.4678
 
 
-### **Recommendation**
+### Key Findings:
 
-The Decision Tree Model is the one I would use because of the higher R2 score. The R2 for the Decision Tree is 59% for the testing set and 60% for the training set. The RMSE was also lower for the Decision Tree with 1,057.1244.
+- The Decision Tree model outperformed the Linear Regression model across all evaluation metrics.
+- Decision Tree model demonstrated better generalization performance, indicating its suitability for real-world sales prediction.
+- Both models showed moderate predictive power with \(R^2\) scores ranging from 0.5606 to 0.6039.
+
+### Implications and Alignment with Objectives:
+
+- Model Selection: Decision Tree model is recommended for predicting sales due to its superior performance.
+- Generalization Performance: Decision Tree model's ability to generalize well to unseen data is advantageous for accurate sales predictions.
+- Model Improvement: Further optimization of hyperparameters or exploration of ensemble methods could enhance the Decision Tree model's predictive performance.
+- Business Insights: Insights derived from these models can aid businesses in optimizing inventory management and making data-driven strategic decisions.
+
+## Conclusion
+
+This analysis provides valuable insights into sales prediction modeling, enabling businesses to make informed decisions and maximize revenue and profitability.
