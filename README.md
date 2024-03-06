@@ -1,31 +1,10 @@
-# Sales Predictions for Big Mart Outlets
+# Sales Prediction Analysis
 
-## **Aim is to build a predictive model and predict the sales of each product at a particular outlet.**
+## Overview
 
 ### Data:
 Data Science Big Market Sales Prediction: https://www.kaggle.com/datasets/shivan118/big-mart-sales-prediction-datasets
 Sales data for 1559 products across 10 stores in different cities
-
-### Methods:
-- Load the Data
-- Inspect the Data
-- Clean the Data
-- Data Preprocessing
--   ColumnSelector
--   ColumnTransformer
-- Data Modeling
-- Linear Regresssion Model
--   R-Squared
--   Root Mean Squared Error
-- Regression Tree Model
--   R-Squared
--   Root Mean Squared Error
-- Model Comparison
-
-### Results 
-- Create a default model
-- High Bias Version and High Variance Version 
-- Create best version of the model
 
 ### **Data Dictionary:**
 
@@ -43,6 +22,28 @@ Outlet_Size | The size of the store in terms of ground area covered
 Outlet_location_type | The type of area in which the storoe is located
 Outlet_Type | Whether the outlet is a grocery store or some sort of supermarket
 Item_Outlet_Sales | Sales of the product in the particular store. This is the target variable to be predicted. 
+
+## Results Interpretation
+### Linear Regression Model:
+- **Training Scores:**
+  - \(R^2\): 0.5606
+  - MAE: 848.9872
+  - MSE: 1,300,271.1535
+  - RMSE: 1,140.2943
+
+- **Test Scores:**
+  - \(R^2\): 0.5658
+  - MAE: 808.0322
+  - MSE: 1,197,957.7117
+  - RMSE: 1,094.5125
+
+
+### Results 
+- Create a default model
+- High Bias Version and High Variance Version 
+- Create best version of the model
+
+
 
 
 ### Before data modeling, the data was cleaned, and the following processes were performed:
@@ -75,40 +76,7 @@ Outlet Type: Different types of supermarket outlets
 Scatter Plot: Correlation Coefficient
 ![image](https://user-images.githubusercontent.com/74616874/216895650-8c19b281-39df-4cdf-8250-3041cd243e9b.png)
 
-### Models Evaluated & Results
 
-Linear Regression Test Predictions:
-test_pred = lin_reg_pipe.predict(X_test)
-test_pred[:10]
-
-Output:   
-array([1363.375,  714.   ,  883.25 , 4235.   , 3338.5  ,  610.5  ,
-       4769.5  , 2063.25 , 1403.   , 2816.75 ])
-       
-Linear Regression Train Scores
-MAE: 847.1742 
-MSE: 1,297,591.6937 
-RMSE: 1,139.1188 
-R2: 0.5615
-
-Decision Tree Regressor Testing Model (Max_Depth = 9)
-MAE: 783.5367 
-MSE: 1,270,111.0932 
-RMSE: 1,126.9921 
-R2: 0.5396
-
-Decision Tree Test Predictions:
-test_preds[:10]
-
-Output:
-array([ 805.618 , 1249.0408,  926.7936, 5000.8238, 4502.1396,  679.116 ,
-       5313.084 ,  282.2992, 1704.448 , 2846.295 ])
-
-Tuned Decision Tree Regressor Testing Model (Max_Depth = 5)
-MAE: 738.0201 
-MSE: 1,117,511.9614 
-RMSE: 1,057.1244 
-R2: 0.5950
 
 
 ### **Recommendation**
