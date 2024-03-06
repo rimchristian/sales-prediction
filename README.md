@@ -26,31 +26,20 @@ Outlet_Type | Whether the outlet is a grocery store or some sort of supermarket
 Item_Outlet_Sales | Sales of the product in the particular store. This is the target variable to be predicted. 
 
 ## Exploratory Data Analysis
-- This histogram shows the frequency distribution of the Item Fat Content.  
-
-![image](https://user-images.githubusercontent.com/74616874/216893168-1b8e8740-da89-46a7-aa77-dbdf2b8ecb4e.png)
-
-Item Category or Product Category (Food, Drink, Non-Consumable)
-- There are more food categories that has been sold than other product categories. 
-
-![image](https://user-images.githubusercontent.com/74616874/216893892-e5d2996a-4b85-47ab-b964-a053fd276715.png)
-
+- This histogram shows the frequency distribution of the Item Fat Content.
+  
+<img width="409" alt="Screen Shot 2024-03-06 at 1 15 05 PM" src="https://github.com/rimchristian/sales-prediction/assets/74616874/28da7dc4-342e-491f-91b9-bc1974bd6688">
 
 Item Type: Different types of products
 - Even from this graph, the food dominates than the drinks. 'Food and Vegetables' and 'Snack Foods' had the most. 
 
-![image](https://user-images.githubusercontent.com/74616874/216894271-67f099a8-fc99-4939-a3b2-6c995fcc744f.png)
+<img width="519" alt="Screen Shot 2024-03-06 at 1 16 18 PM" src="https://github.com/rimchristian/sales-prediction/assets/74616874/b048d184-85b8-4705-a1fb-8684dfaba963">
 
 
 Outlet Type: Different types of supermarket outlets
-- Looking at the graph, the supermarket type 1 has a lot of count. 
-
-![image](https://user-images.githubusercontent.com/74616874/216894757-aa8cb43f-2e0d-4323-a7b4-229a906cd1aa.png)
-
-
-
-Scatter Plot: Correlation Coefficient
-![image](https://user-images.githubusercontent.com/74616874/216895650-8c19b281-39df-4cdf-8250-3041cd243e9b.png)
+- Looking at the graph, the supermarket type 1 has a lot of count.
+  
+<img width="665" alt="Screen Shot 2024-03-06 at 1 16 46 PM" src="https://github.com/rimchristian/sales-prediction/assets/74616874/7d11383f-c85d-46ed-bcc6-df386f639e9b">
 
 
 ## Results Interpretation
